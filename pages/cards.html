@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home Works</title>
+    <title>Lessons</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/core.css">
-    <link rel="stylesheet" href="../css/home_works.css">
+    <link rel="stylesheet" href="../css/lessons.css">
+    <link rel="stylesheet" href="../css/cards.css">
+
 </head>
 <body>
 
@@ -26,56 +28,22 @@
                         <a href="../pages/lessons.html">Lessons</a>
                     </li>
                     <li class="menu_link">
-                        <a href="../pages/cards.html" >Card</a>                    </li>
+                        <a href="../pages/cards.html" >Card</a>
+                    </li>
                 </ul>
                 <button class="btn" id="btn-get">Click me!</button>
             </div>
         </div>
     </div>
-
-    <div class="gmail_block">
+    <div class="menu">
         <div class="container">
-            <h3>Home work 1 (part 1)</h3>
-            <div class="inner_gmail_block">
-                <div class="form_gmail">
-                    <label for="gmail_input"></label>
-                    <input type="text" id="gmail_input" placeholder="your gmail">
-                    <button class="btn" id="gmail_button">Check gmail</button>
-                    <span class="checker" id="gmail_result"></span>
-                </div>
-            </div>
+            <div class="cards-map"></div>
         </div>
-    </div>
 
-    <div class="move_block">
-        <div class="container">
-            <h3>Home work 1 (part 2)</h3>
-            <div class="inner_move_block">
-                <div class="parent_block">
-                    <div class="child_block"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>    
+    
 
-    <div class="stopwatch">
-        <div class="container">
-            <h3>Home work 2 </h3>
-            <div class="time">
-                <div class="time_block">
-                    <div class="interval" id="seconds">0</div>
-                </div>
-            </div>
-            <div class="time_buttons">
-                <button class="btn" id="start">Start</button>
-                <button class="btn" id="stop">Stop</button>
-                <button class="btn" id="reset">Reset</button>
-            </div>
-        </div>
-    </div>
-    <div class="cards_home">
-    </div>
-
+    
     <div class="footer">
         <div class="container">
             <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
@@ -91,7 +59,7 @@
     <div class="modal_dialog">
         <div class="modal_content">
             <form action="#">
-                <div class="modal_close">&times;</div>
+                <div class="modal_close">&#10006;</div>
                 <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
                 <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
                 <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
@@ -102,6 +70,8 @@
 </div>
 
 </body>
-<script src="../js/home_works.js"></script>
+<script src="../js/lesson.js"></script>
 <script src="../js/modal.js"></script>
+<script src="../js/cards.js"></script>
+
 </html>

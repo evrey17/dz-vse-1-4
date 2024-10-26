@@ -67,4 +67,30 @@ const reset = document.querySelector("#reset")
     }
  }
 
+ const cardsHome = document.querySelector('.cards_home')
+ const asyncDataPersons = async () => {
+    try{
+        const response = await fetch('../data/persons.json')  
+        const data = await response.json()
+        data.forEach(element => {
+            const card = document.createElement('div')
+            card.className = 'card_home'
+            card.innerHTML = `
+                <span>${element.name}</span> 
+                <span>${element.bio}</span>
+                <span>${element.age}</span> 
+                <img src="${element.person_photo}" alt="">
+                
+            `
+            cardsHome.append(card)
+        });
+        
+          
+    }catch(e){
+        console.error(e);
+        
+    }
+ }
+ asyncDataPersons()
+
 

@@ -191,3 +191,25 @@
     display: flex;
     justify-content: space-between;
 }
+.cards_home{
+    margin: 0 auto;
+    background-color: #000;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card_home{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    color: #fff;
+    background-color: orange ;
+    border: 3px solid red;
+    height: 200px;
+    padding: 20px;
+
+}
+.card_home img{
+    width: 200px;
+    height: 100px;
+}
